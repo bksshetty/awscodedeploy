@@ -8,4 +8,8 @@ test:
   override:
     - "true"
 deployment:
-  stage:
+  staging:
+    branch: master
+    codedeploy:
+      Burberry-Stage-transparency:
+        deployment_group: Burberry-Stage-transparency
