@@ -7,17 +7,17 @@ dependencies:
 test:
   override:
     - "true"
- deployment:
-  staging:
-    branch: master
-    codedeploy:
-      my-app:
-        application_root: /
-        revision_location:
-          revision_type: S3
-          s3_location:
-            bucket: test-k-code
-            key_pattern: apps/my-app-{SHORT_COMMIT}-{BUILD_NUM}
-        region: eu-west-1
-        deployment_group: Burberry-Stage-transparency
-        deployment_config: CodeDeployDefault.OneAtATime
+deployment:
+ staging:
+   branch: master
+   codedeploy:
+     my-app:
+       application_root: /
+       revision_location:
+         revision_type: S3
+         s3_location:
+           bucket: test-k-code
+           key_pattern: apps/my-app-{SHORT_COMMIT}-{BUILD_NUM}
+       region: eu-west-1
+       deployment_group: Burberry-Stage-transparency
+       deployment_config: CodeDeployDefault.OneAtATime
