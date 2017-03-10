@@ -17,3 +17,4 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: test-k-code
+            key_pattern: my-app/my-app-master-{SHORT_COMMIT}-{BUILD_NUM}
