@@ -8,8 +8,12 @@ test:
   override:
     - "true"
 deployment:
-  staging:
+  production:
     branch: master
     codedeploy:
       Burberry-Stage-transparency:
         deployment_group: Burberry-Stage-transparency
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: test-k-code
