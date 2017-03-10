@@ -18,6 +18,6 @@ test:
           s3_location:
             bucket: test-k-code
             key_pattern: apps/my-app-{SHORT_COMMIT}-{BUILD_NUM}
-        region: us-west-1
+        region: eu-west-1
         deployment_group: Burberry-Stage-transparency
         deployment_config: CodeDeployDefault.OneAtATime
