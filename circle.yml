@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 5.8.0
+dependencies:
+  override:
+    - "true"
+test:
+  override:
+    - "true"
+deployment:
+  stage:
